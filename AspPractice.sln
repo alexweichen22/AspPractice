@@ -17,9 +17,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L2_MoreControls", "_Lectur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L6_IntroToVSandASPNETwebapps", "_Lecture6_A-IntroToVSandASPNETwebapps\IntroToVSandASPNETwebapps\_L6_IntroToVSandASPNETwebapps.csproj", "{C1634AD2-7084-4CA6-9DF2-6B1AAA47BCA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L7_MyFirstWebApp", "_Lecture7_A-MyFirstWebApp\MyFirstWebApp\_L7_MyFirstWebApp.csproj", "{E1859F0E-169A-4FA2-B909-D3E30E809D1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L7A_MyFirstWebApp", "_Lecture7_A-MyFirstWebApp\MyFirstWebApp\_L7A_MyFirstWebApp.csproj", "{E1859F0E-169A-4FA2-B909-D3E30E809D1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z02-MVC", "Z02-MVC\Z02-MVC.csproj", "{0FF2C938-02B3-4DD6-B7B7-A768A06F4DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L7B_SimpleFormatting", "_Lecture7_B-SimpleFormatting\SimpleFormatting\_L7B_SimpleFormatting.csproj", "{8C981ECF-E394-407A-BC7E-9AD459BB8D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L8A_MultiPage", "_Lecture8_A-MultiPage\MultiPage\_L8A_MultiPage.csproj", "{6A23ABC6-DE09-45E1-ABA5-C5DFDCFD4713}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{0FF2C938-02B3-4DD6-B7B7-A768A06F4DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF2C938-02B3-4DD6-B7B7-A768A06F4DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF2C938-02B3-4DD6-B7B7-A768A06F4DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C981ECF-E394-407A-BC7E-9AD459BB8D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C981ECF-E394-407A-BC7E-9AD459BB8D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C981ECF-E394-407A-BC7E-9AD459BB8D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C981ECF-E394-407A-BC7E-9AD459BB8D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A23ABC6-DE09-45E1-ABA5-C5DFDCFD4713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A23ABC6-DE09-45E1-ABA5-C5DFDCFD4713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A23ABC6-DE09-45E1-ABA5-C5DFDCFD4713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A23ABC6-DE09-45E1-ABA5-C5DFDCFD4713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
