@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspPractice", "AspPractice\AspPractice.csproj", "{6B406302-1660-403F-9D82-E0595BD594CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "session-one", "session-one\session-one\session-one.csproj", "{190727E1-5DAE-4B8E-AD5C-D885F518BA62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App01WebForm", "App01WebForm\App01WebForm.csproj", "{4ABC7570-A867-41F7-BEB9-4D254197755F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "validation", "validation\validation.csproj", "{C4EA4E36-7540-46E3-AF4C-2FE028D3106D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reza01-session-one", "reza01-session-one\session-one\reza01-session-one.csproj", "{190727E1-5DAE-4B8E-AD5C-D885F518BA62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseMigrationExample", "DatabaseMigrationExample\DatabaseMigrationExample.csproj", "{4E6B0217-B318-431F-9903-23DAC2ADEDAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reza02-validation", "reza02-validation\reza02-validation.csproj", "{C4EA4E36-7540-46E3-AF4C-2FE028D3106D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMvcApplication", "FirstMvcApplication\FirstMvcApplication.csproj", "{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L2_MoreControls", "Lecture2_A-MoreControls\A-MoreControls\MoreControls\L2_MoreControls.csproj", "{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_App01WebForm", "_App01WebForm\_App01WebForm.csproj", "{4ABC7570-A867-41F7-BEB9-4D254197755F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L6_IntroToVSandASPNETwebapps", "Lecture6_A-IntroToVSandASPNETwebapps\A-IntroToVSandASPNETwebapps\IntroToVSandASPNETwebapps\L6_IntroToVSandASPNETwebapps.csproj", "{C1634AD2-7084-4CA6-9DF2-6B1AAA47BCA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L2_MoreControls", "_Lecture2_A-MoreControls\A-MoreControls\MoreControls\_L2_MoreControls.csproj", "{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L7_MyFirstWebApp", "Lecture7_A-MyFirstWebApp\A-MyFirstWebApp\MyFirstWebApp\L7_MyFirstWebApp.csproj", "{E1859F0E-169A-4FA2-B909-D3E30E809D1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L6_IntroToVSandASPNETwebapps", "_Lecture6_A-IntroToVSandASPNETwebapps\A-IntroToVSandASPNETwebapps\IntroToVSandASPNETwebapps\_L6_IntroToVSandASPNETwebapps.csproj", "{C1634AD2-7084-4CA6-9DF2-6B1AAA47BCA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L7_MyFirstWebApp", "_Lecture7_A-MyFirstWebApp\A-MyFirstWebApp\MyFirstWebApp\_L7_MyFirstWebApp.csproj", "{E1859F0E-169A-4FA2-B909-D3E30E809D1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_AspPractice", "_AspPractice\_AspPractice.csproj", "{6B406302-1660-403F-9D82-E0595BD594CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6B406302-1660-403F-9D82-E0595BD594CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B406302-1660-403F-9D82-E0595BD594CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B406302-1660-403F-9D82-E0595BD594CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B406302-1660-403F-9D82-E0595BD594CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4ABC7570-A867-41F7-BEB9-4D254197755F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4ABC7570-A867-41F7-BEB9-4D254197755F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4ABC7570-A867-41F7-BEB9-4D254197755F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4ABC7570-A867-41F7-BEB9-4D254197755F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,18 @@ Global
 		{C4EA4E36-7540-46E3-AF4C-2FE028D3106D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4EA4E36-7540-46E3-AF4C-2FE028D3106D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4EA4E36-7540-46E3-AF4C-2FE028D3106D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E6B0217-B318-431F-9903-23DAC2ADEDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6B0217-B318-431F-9903-23DAC2ADEDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6B0217-B318-431F-9903-23DAC2ADEDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6B0217-B318-431F-9903-23DAC2ADEDAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABC7570-A867-41F7-BEB9-4D254197755F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABC7570-A867-41F7-BEB9-4D254197755F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABC7570-A867-41F7-BEB9-4D254197755F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABC7570-A867-41F7-BEB9-4D254197755F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +59,10 @@ Global
 		{E1859F0E-169A-4FA2-B909-D3E30E809D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1859F0E-169A-4FA2-B909-D3E30E809D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1859F0E-169A-4FA2-B909-D3E30E809D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B406302-1660-403F-9D82-E0595BD594CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B406302-1660-403F-9D82-E0595BD594CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B406302-1660-403F-9D82-E0595BD594CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B406302-1660-403F-9D82-E0595BD594CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,63 @@
+﻿@using FirstMvcApplication.Models @*first line for any using, for example helper, enum, service*@
+@model FirstMvcApplication.Models.Calculator
+@*the second line the MODEL that use in this view*@
+
+@{
+    ViewBag.Title = "Calculator";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>My Calculator</h2>
+
+@using (Html.BeginForm())
+{
+<div class="form-horizontal">
+    <div class="form-group">
+        @Html.LabelFor(model => model.Operand1, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Operand1, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Operand1, "", new { @class="text-danger"})
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Operand2, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Operand2, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Operand2, "", new { @class = "text-danger" })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Operator, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Operator",
+           EnumHelper.GetSelectList(typeof(Operator)),
+               "Select an operator",
+               new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Operator, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Calculate" class="btn btn-default" />
+        </div>
+    </div>
+
+    @if (Model != null && Model.Result.HasValue)
+                {
+                    <div>
+                        The result of the operation is : @Model.Result.Value 
+                    </div>
+                }
+</div>
+ }
+
+@section Scripts{
+        @Scripts.Render("~/bundles/jqueryval")
+        
+    }
+
+        
