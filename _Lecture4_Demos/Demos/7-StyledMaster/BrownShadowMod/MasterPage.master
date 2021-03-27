@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Mr. Chiarelli's IDC4OW ASP.NET Site</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Start VideoLightBox.com HEAD section -->
+		<link rel="stylesheet" href="engine/css/videolightbox.css" type="text/css" />
+		<style>#videogallery a#videolb{display:none}
+            .auto-style1 {
+                color: #4C320D;
+            }
+        </style>
+		
+			<link rel="stylesheet" type="text/css" href="engine/css/overlay-minimal.css"/>
+			<script src="engine/js/jquery.tools.min.js"></script>
+			<script src="engine/js/swfobject.js"></script>
+			<!-- make all links with the 'rel' attribute open overlays -->
+			<script src="engine/js/videogallery.js"></script>
+	<!-- End VideoLightBox.com HEAD section -->
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div id="wrap">
+
+<div id="top"> </div>
+
+<div id="header">
+<h1><a href="#">Mr. Chiarelli&#39;s Computer Science ELearning Site</a></h1>
+<h2>ASP.NET Version</h2>
+</div>
+
+<div id="menu">
+<ul>
+<li><a href="index.aspx">Home</a></li>
+<li><a href="flash.aspx">Flash</a></li>
+<li><a href="javascript.aspx">Javascript</a></li>
+<li><a href="css.aspx">CSS</a></li>
+<li><a href="aspnet.aspx">ASP.NET</a></li>
+<li></li>
+<li><a href="contact.aspx">Contact Info</a></li>
+<li></li>
+
+</ul>
+</div>
+
+<div id="content">
+<div class="left"> 
+
+<h2><a href="#"><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    
+</asp:ContentPlaceHolder></a></h2>
+
+<div class="articles">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+    
+    </asp:ContentPlaceHolder>
+<br /><br />
+    
+
+
+<asp:ContentPlaceHolder id="ContentPlaceHolder4" runat="server">
+  
+</asp:ContentPlaceHolder>
+<%--<img src="images/pic.jpg" alt="Example pic" style="border: 3px solid #ccc;" />   --%>   
+
+
+<br /><br />
+    <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</div>
+
+</div>
+
+<div class="right"> 
+
+<h2>Key Downloads :</h2>
+<ul>
+<li><a href="docs/idc4ow.pdf" target="_blank">Course Handouts</a></li> 
+<li><a href="https://visualstudio.microsoft.com/" target="_blank">Visual Studio </a></li> 
+<li><a href="http://www.adobe.com/education/products/creativesuite/" target="_blank">Adobe Creative Suite</a></li> 
+</ul>
+
+<h2>Links</h2>
+<ul>
+<li><a href="http://cchiarelli.blogspot.com/" target="_blank">Blog</a></li>
+<li><a href="http://cchiarelli.edublogs.org/" target="_blank">EduBlog</a></li> 
+<li><a href="http://freecomputerbooks.com/" target="blank">Free Computer Books</a></li> 
+</ul>
+
+</div>
+<div style="clear: both;"> </div>
+</div>
+
+
+<div id="footer">
+Charlie Chiarelli - St. Jean de Brebeuf Catholic Secondary School
+</div>
+</div>
+    
+    
+    
+        
+   
+    </form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿#Header 
+{
+    background-color: #C0C0C0;
+    width: 844px;
+    height: 83px;
+}
+
+
+#MenuWrapper 
+{
+    width: 844px;
+}
+
+
+#MainContent 
+{
+    width: 644px;
+    float: left;
+}
+
+
+#Sidebar 
+{
+    background-color: #808080;
+    width: 200px;
+    float: right;
+}
+
+
+#Footer 
+{
+    background-color: #C0C0C0;
+    width: 844px;
+    clear: both;
+}
+
+/*  clear:both ... is used for floats. If you float content you can float left or right... 
+    so in a common layout you might have a left nav, a content div and a footer. 
+    To ensure the footer stays below both of these floats (if you have floated left and right) 
+    then you put the footer as clear: both */
+
+#PageWrapper {
+    width: 844px;
+    margin: 0 auto;                 /*This centers the page in the browser*/
+    border-left: 2px solid black;   /* 0 is for top-bottom and auto for left-right. */
+    border-right: 2px solid black;  /*It means that left and right margin will take auto margin*/ 
+    padding: 0 20px;                /*according to the width of the element and the width of the container. */
+    
+}
+
+.red 
+{
+    color: red;
+}
+
+/*The IDs below are using Descendent Selectors*/
+
+#MainContent a      /*Here we are creating a special style for the anchor HTML tag (link) but only follow the rule*/
+{                   /*within the MainContent ID section ... the other two below also only apply in the MainContent section*/
+    color: #008000;
+    text-decoration: underline;
+}
+
+#MainContent a:visited
+{
+        color: #FF0000;
+        text-decoration: underline;
+}
+
+#MainContent a:hover 
+{
+        color: #FFA500;
+        text-decoration: underline;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+}
+/*top margin is 0px right margin is 0px bottom margin is 10px left margin is 0px*/
+
+.Introduction {
+    font-style: italic;
+    color: #0000FF;
+}
