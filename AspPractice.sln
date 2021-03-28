@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L2_MoreControls", "_Lecture2_A-MoreControls\MoreControls\_L2_MoreControls.csproj", "{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z02-MVC", "Z02-MVC\Z02-MVC.csproj", "{0FF2C938-02B3-4DD6-B7B7-A768A06F4DFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L4_1_PizzaStore", "_Lecture4_Demos\Demos\1-PizzaStore\PizzaStore\_L4_1_PizzaStore.csproj", "{80C93E82-1B32-447A-8737-4901A05EDB6B}"
@@ -29,13 +27,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L4_3_TheCalendar", "_Lectu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L6_TroisLacs_FirstWeb", "_L6_TroisLacs\_L6_TroisLacs_FirstWeb.csproj", "{C8C8844B-FD38-4520-9468-F365A31598A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z00-WinForms-Empty", "Z00-WinForms-Empty\Z00-WinForms-Empty.csproj", "{209D432B-0BF4-4D77-BE95-E6C0AFA19CCA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z01-WinForms", "Z01-WinForms\Z01-WinForms.csproj", "{6F122877-09CA-41EF-A019-D6FCB4224C5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L7A_TroisLacs_Empty_WebForms", "_L7A_TroisLacs_Empty_WebForms\_L7A_TroisLacs_Empty_WebForms.csproj", "{F1638D02-2210-48F0-918F-89BA1C4B24F3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L7B-8_EmptyWebForms", "_L7B-8_EmptyWebForms\_L7B-8_EmptyWebForms.csproj", "{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y01-session-one", "Y01_session-one\session-one\Y01-session-one.csproj", "{190727E1-5DAE-4B8E-AD5C-D885F518BA62}"
 EndProject
@@ -45,16 +39,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y03-DatabaseMigrationExampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y04-FirstMvcApplication", "Y04_FirstMvcApplication\Y04-FirstMvcApplication.csproj", "{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_L9A_MoreControls", "9A-MoreControls\A-MoreControls\MoreControls\_L9A_MoreControls.csproj", "{BAC4AD91-14D0-41AE-88D5-0F291A7BD332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z00-AspNet-Empty-WebForms", "Z00-AspNet-Empty-WebForms\Z00-AspNet-Empty-WebForms.csproj", "{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E4F3BEC-BE7E-489F-A6D8-B9825CDAA322}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0FF2C938-02B3-4DD6-B7B7-A768A06F4DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0FF2C938-02B3-4DD6-B7B7-A768A06F4DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF2C938-02B3-4DD6-B7B7-A768A06F4DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -103,10 +97,6 @@ Global
 		{C8C8844B-FD38-4520-9468-F365A31598A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8C8844B-FD38-4520-9468-F365A31598A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8C8844B-FD38-4520-9468-F365A31598A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{209D432B-0BF4-4D77-BE95-E6C0AFA19CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{209D432B-0BF4-4D77-BE95-E6C0AFA19CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{209D432B-0BF4-4D77-BE95-E6C0AFA19CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{209D432B-0BF4-4D77-BE95-E6C0AFA19CCA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6F122877-09CA-41EF-A019-D6FCB4224C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F122877-09CA-41EF-A019-D6FCB4224C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F122877-09CA-41EF-A019-D6FCB4224C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -115,10 +105,6 @@ Global
 		{F1638D02-2210-48F0-918F-89BA1C4B24F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1638D02-2210-48F0-918F-89BA1C4B24F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1638D02-2210-48F0-918F-89BA1C4B24F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -135,6 +121,14 @@ Global
 		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC4AD91-14D0-41AE-88D5-0F291A7BD332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC4AD91-14D0-41AE-88D5-0F291A7BD332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC4AD91-14D0-41AE-88D5-0F291A7BD332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC4AD91-14D0-41AE-88D5-0F291A7BD332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
