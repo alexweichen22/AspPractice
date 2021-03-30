@@ -1,0 +1,62 @@
+﻿@model TemperatureConvertor.Models.Conversion
+@using TemperatureConvertor.Models
+
+@{
+    ViewBag.Title = "Conversion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Conversion</h2>
+
+@using (Html.BeginForm())
+{
+<div class="form-horizontal">
+    <div class="form-group">
+        @Html.LabelFor(model => model.From, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("From",
+                 EnumHelper.GetSelectList(typeof(TemperatureUnit)),
+                     "Select a temparatuer Unit",
+                     new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.From, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.To, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("To",
+                 EnumHelper.GetSelectList(typeof(TemperatureUnit)),
+                     "Select a temparatuer Unit",
+                     new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.To, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ToConvert, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model=> model.ToConvert, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ToConvert, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Convert" class="btn btn-default" />
+        </div>
+    </div>
+
+    @if (Model != null && !string.IsNullOrEmpty(Model.Result))
+                {
+                    <div>The result is : @Model.Result</div>
+                }
+</div>
+    }
+<div>
+    @Html.ActionLink("Back to the List", "Calculate")
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    } 
