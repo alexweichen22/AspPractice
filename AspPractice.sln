@@ -41,11 +41,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z03-MVC-Conversion", "Z03-M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z04-MVC-no-auth", "Z04-MVC-no-auth\Z04-MVC-no-auth.csproj", "{9AD35DB0-2089-4C34-A9EB-A8673DB83A83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05A_TemperatureConvertor", "Y05_TempConv_MVCScaff\TemperatureConvertor\Y05A_TemperatureConvertor.csproj", "{DEB5A3D6-BA9D-4186-9333-03F45783D065}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z05-MVC-auth", "Z05-MVC-auth\Z05-MVC-auth.csproj", "{7BF19D36-EA90-466E-AB28-0AF22193F78E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05B_MVCScaffoldingWithoutAuth", "Y05_TempConv_MVCScaff\MVCScaffoldingWithoutAuth\Y05B_MVCScaffoldingWithoutAuth.csproj", "{BF87B326-AF3A-43D3-A5DA-E99D250D099F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TroisLacsBlog", "TroisLacsBlog\TroisLacsBlog.csproj", "{3C06BDA2-B39E-457B-8464-9EA716019031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05C_MVCScaffolding", "Y05_TempConv_MVCScaff\MVCScaffolding\Y05C_MVCScaffolding.csproj", "{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05A-TemperatureConvertor", "Y05_TempConv_MVCScaff\TemperatureConvertor\Y05A-TemperatureConvertor.csproj", "{DEB5A3D6-BA9D-4186-9333-03F45783D065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05B-MVCScaffoldingWithoutAuth", "Y05_TempConv_MVCScaff\MVCScaffoldingWithoutAuth\Y05B-MVCScaffoldingWithoutAuth.csproj", "{BF87B326-AF3A-43D3-A5DA-E99D250D099F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05C-MVCScaffolding", "Y05_TempConv_MVCScaff\MVCScaffolding\Y05C-MVCScaffolding.csproj", "{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,14 @@ Global
 		{9AD35DB0-2089-4C34-A9EB-A8673DB83A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AD35DB0-2089-4C34-A9EB-A8673DB83A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AD35DB0-2089-4C34-A9EB-A8673DB83A83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BF19D36-EA90-466E-AB28-0AF22193F78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BF19D36-EA90-466E-AB28-0AF22193F78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BF19D36-EA90-466E-AB28-0AF22193F78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BF19D36-EA90-466E-AB28-0AF22193F78E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C06BDA2-B39E-457B-8464-9EA716019031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C06BDA2-B39E-457B-8464-9EA716019031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C06BDA2-B39E-457B-8464-9EA716019031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C06BDA2-B39E-457B-8464-9EA716019031}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DEB5A3D6-BA9D-4186-9333-03F45783D065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DEB5A3D6-BA9D-4186-9333-03F45783D065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEB5A3D6-BA9D-4186-9333-03F45783D065}.Release|Any CPU.ActiveCfg = Release|Any CPU
