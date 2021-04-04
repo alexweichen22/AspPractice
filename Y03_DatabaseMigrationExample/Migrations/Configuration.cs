@@ -1,6 +1,5 @@
 namespace DatabaseMigrationExample.Migrations
 {
-    using DatabaseMigrationExample.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -19,16 +18,7 @@ namespace DatabaseMigrationExample.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
-
-            context.Customers.AddOrUpdate(
-                new Customer() { Name = "Reza", Age = 12 },
-                new Customer() { Name = "MO", Age = 11 },
-                new Customer() { Name = "Donal", Age = 13 });
-
-            context.Inventories.AddOrUpdate(
-            new Inventory() { Name = "inv1", Capacity = 1200 },
-            new Inventory() { Name = "inv2", Capacity = 1100 },
-            new Inventory() { Name = "inv3", Capacity = 1300 });
+            context.Customers.AddOrUpdate(new Models.Customer() { Name = "Stephane", Age = 28 });
             context.SaveChanges();
         }
     }

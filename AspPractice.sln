@@ -33,8 +33,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y03-DatabaseMigrationExampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y04-FirstMvcApplication", "Y04_FirstMvcApplication\Y04-FirstMvcApplication.csproj", "{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z00-AspNet-Empty-WebForms", "Z00-AspNet-Empty-WebForms\Z00-AspNet-Empty-WebForms.csproj", "{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z01-WebForms", "Z01-WebForms\Z01-WebForms.csproj", "{FA1BD485-7EBA-4C79-8E36-B63758A7AC7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z03-MVC-Conversion", "Z03-MVC-Conversion\Z03-MVC-Conversion.csproj", "{F4888592-648D-48A9-955C-76C9F27E59A1}"
@@ -50,6 +48,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05B-MVCScaffoldingWithoutAuth", "Y05_TempConv_MVCScaff\MVCScaffoldingWithoutAuth\Y05B-MVCScaffoldingWithoutAuth.csproj", "{BF87B326-AF3A-43D3-A5DA-E99D250D099F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05C-MVCScaffolding", "Y05_TempConv_MVCScaff\MVCScaffolding\Y05C-MVCScaffolding.csproj", "{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y01-session-one", "Y01_session-one\session-one\Y01-session-one.csproj", "{190727E1-5DAE-4B8E-AD5C-D885F518BA62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X01-WebForms-Empty", "X01-WebForms(Empty)\X01-WebForms-Empty.csproj", "{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,10 +119,6 @@ Global
 		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBF8780C-DB1D-4C3C-AB78-63EA580C1A4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA1BD485-7EBA-4C79-8E36-B63758A7AC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA1BD485-7EBA-4C79-8E36-B63758A7AC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA1BD485-7EBA-4C79-8E36-B63758A7AC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -153,6 +151,14 @@ Global
 		{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{190727E1-5DAE-4B8E-AD5C-D885F518BA62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDB7942-E7FD-40CA-A6E0-A59E2E4A8ACA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
