@@ -273,6 +273,12 @@
       <DependentUpon>202103292253501_initial-database.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\XHomeInventory\XHomeInventory.csproj">
+      <Project>{79D91EE6-8A58-4676-A8D3-C42B86F79A54}</Project>
+      <Name>XHomeInventory</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
