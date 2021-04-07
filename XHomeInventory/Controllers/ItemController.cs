@@ -6,7 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using XHomeInventory.Helper;
 using XHomeInventory.Models;
+using XHomeInventory.ViewModels;
 
 namespace XHomeInventory.Controllers
 {
@@ -62,16 +64,34 @@ namespace XHomeInventory.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,SerialNo,Model,Location,Description,Photo,When,Where,Warranty,Price")] Item item)
+        public ActionResult Create([Bind(Include = "Id,SerialNo,Model,Location,Description,Photo,When,Where,Warranty,Price")] ItemViewModel itemVM)
         {
+
             if (ModelState.IsValid)
             {
+                var item = new Item();
+                item.Description = itemVM.Description;
+                item.Location = itemVM.Location;
+                item.Model = itemVM.Model;
+                item.SerialNo = itemVM.SerialNo;
+                item.When = itemVM.When;
+                item.Where = itemVM.Where;
+                item.Warranty = itemVM.Warranty;
+                item.Price = itemVM.Price;
+
+                //adding photo to the object
+                if (itemVM.Photo != null)
+                {
+                    item.Photo = ImageConverter.ByteArrayFromPostedFile(itemVM.Photo);
+                }
+
                 db.Items.Add(item);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(item);
+
+            return View(itemVM);
         }
 
         // GET: Item/Edit/5
