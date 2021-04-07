@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using AutoMapper;
 using MVCScaffolding.Helper;
 using MVCScaffolding.Models;
 using MVCScaffolding.ViewModels;
@@ -82,7 +83,14 @@ namespace MVCScaffolding.Controllers
             {
                 return HttpNotFound();
             }
-            return View(student);
+            //var StudentModel = new StudentViewModel();
+            //StudentModel.Name = student.Name;
+            //is it a good idea for no value put every value from A to B ?
+            Mapper.CreateMap<Student, StudentViewModel>().ForMember(x => x.Photo, opt => opt.Ignore());
+            // AUTOMAPPER
+            var studentVM = Mapper.Map<StudentViewModel>(student);
+            studentVM.PhotoDB = student.Photo;
+            return View(studentVM);
         }
 
         // POST: Students/Edit/5
@@ -90,15 +98,23 @@ namespace MVCScaffolding.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,EnrollmentDate,Photo")] Student student)
+        public ActionResult Edit(StudentViewModel studentVM)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid) //no validation error
             {
+                Student student = db.Students.Find(studentVM.Id);
+                if(studentVM != null && studentVM.Photo != null)
+                {
+                    student.Photo = ImageConverter.ByteArrayFromPostedFile(studentVM.Photo);
+                }
+                student.Name = studentVM.Name;
+                student.EnrollmentDate = studentVM.EnrollmentDate;
+
                 db.Entry(student).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(student);
+            return View(studentVM);
         }
 
         // GET: Students/Delete/5

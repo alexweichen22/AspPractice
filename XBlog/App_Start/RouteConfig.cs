@@ -16,7 +16,7 @@ namespace XBlog
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Posts", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Post", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

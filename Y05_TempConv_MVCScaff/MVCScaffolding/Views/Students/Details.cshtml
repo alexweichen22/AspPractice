@@ -1,4 +1,5 @@
-﻿@model MVCScaffolding.Models.Student
+﻿@using MVCScaffolding.Helper
+@model MVCScaffolding.Models.Student
 
 @{
     ViewBag.Title = "Details";
@@ -32,7 +33,10 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Photo)
+           @if(Model.Photo != null)
+            {
+                @Html.GetThumbnail(Model.Photo)
+            }
         </dd>
 
     </dl>

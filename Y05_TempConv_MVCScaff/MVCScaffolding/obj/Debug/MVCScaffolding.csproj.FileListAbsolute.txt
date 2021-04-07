@@ -108,3 +108,6 @@ C:\Users\user\source\repos\TemperatureConvertor\MVCScaffolding\obj\Debug\MVCScaf
 C:\Users\user\source\repos\TemperatureConvertor\MVCScaffolding\obj\Debug\MVCScaffolding.pdb
 C:\Users\user\source\repos\TemperatureConvertor\MVCScaffolding\obj\Debug\MVCScaffolding.Migrations.initialdatabase.resources
 C:\Users\user\source\repos\TemperatureConvertor\MVCScaffolding\obj\Debug\MVCScaffolding.csproj.GenerateResource.cache
+C:\Users\user\source\repos\TemperatureConvertor\MVCScaffolding\bin\AutoMapper.Net4.dll
+C:\Users\user\source\repos\TemperatureConvertor\MVCScaffolding\bin\AutoMapper.dll
+C:\Users\user\source\repos\TemperatureConvertor\MVCScaffolding\bin\AutoMapper.xml
