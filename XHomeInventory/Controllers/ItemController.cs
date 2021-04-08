@@ -27,12 +27,17 @@ namespace XHomeInventory.Controllers
         public ActionResult Index(string searchString)
         {
             ViewBag.searchString = searchString;
+            //ViewBag.sortOrder = sortOrder;
+            //ViewBag.sortDir = sortDir;
 
             var items = db.Items.AsQueryable();
             if (!string.IsNullOrEmpty(searchString))
             {
-                items = items.Where(s => s.SerialNo.Contains(searchString));
+                items = items.Where(s => s.Description.Contains(searchString));
             }
+
+            items = items.OrderBy(s => s.Description);
+
 
             return View(items.ToList());
         }
@@ -95,6 +100,7 @@ namespace XHomeInventory.Controllers
         }
 
         // GET: Item/Edit/5
+        
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -108,21 +114,38 @@ namespace XHomeInventory.Controllers
             }
             return View(item);
         }
+        
 
         // POST: Item/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,SerialNo,Model,Location,Description,Photo,When,Where,Warranty,Price")] Item item)
+        public ActionResult Edit(ItemViewModel itemVM)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid) //no validation error
             {
+                Item item = db.Items.Find(itemVM.Id);
+                
+                if (itemVM != null && itemVM.Photo != null)
+                {
+                    item.Photo = ImageConverter.ByteArrayFromPostedFile(itemVM.Photo);
+                }
+                
+                item.Description = itemVM.Description;
+                item.Location = itemVM.Location;
+                item.Model = itemVM.Model;
+                item.SerialNo = itemVM.SerialNo;
+                item.When = itemVM.When;
+                item.Where = itemVM.Where;
+                item.Warranty = itemVM.Warranty;
+                item.Price = itemVM.Price;
+ 
                 db.Entry(item).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(item);
+            return View(itemVM);
         }
 
         // GET: Item/Delete/5
