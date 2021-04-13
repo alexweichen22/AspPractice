@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Ajax";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ajax</h2>
+<a data-ajax="true" href="/Home/ServerTime"
+   data-ajax-method="GET" data-ajax-mode="replace"
+   data-ajax-update="#timeDisplay">
+    Load Server Time
+</a>
+<div id="timeDisplay"></div>
+
+@section Scripts{
+    @Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.min.js")
+    } 

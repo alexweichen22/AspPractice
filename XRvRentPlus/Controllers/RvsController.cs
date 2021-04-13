@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using XRvRentPlus.Models;
+using XRvRentPlus.ViewModels;
 
 namespace XRvRentPlus.Controllers
 {
@@ -18,6 +19,52 @@ namespace XRvRentPlus.Controllers
         public ActionResult Index()
         {
             return View(db.Rvs.ToList());
+        }
+
+        public ActionResult Random()
+        {
+            // This is to generate a random record from database model to show it on
+            // homepage (Random)
+            System.Random random = new System.Random();
+            int rand = random.Next(0, db.Rvs.ToList().Count());
+            int i = 0;
+            var rv = new Rv();
+            //db.Rvs.ToList().Count;
+            foreach (var temp in db.Rvs.ToList())
+            {
+                if (rand == i)
+                {
+                    rv = temp;
+                    i = 0;
+                    break;
+                }
+                i++;
+            }
+
+
+
+            int randCustomer = random.Next(0, db.Customers.ToList().Count());
+            int j = 0;
+            var customer = new Customer();
+            foreach (var temp in db.Customers.ToList())
+            {
+                if (randCustomer == j)
+                {
+                    customer = temp;
+                    j = 0;
+                    break;
+                }
+                j++;
+            }
+
+            var viewModel = new RandomRvViewModel();
+            viewModel.Rv = rv;
+            viewModel.Customer = customer;
+            viewModel.Rvs = db.Rvs.ToList();
+            viewModel.Customers = db.Customers.ToList();
+
+            return View(viewModel);
+
         }
 
         // GET: Rvs/Details/5
@@ -46,7 +93,7 @@ namespace XRvRentPlus.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name")] Rv rv)
+        public ActionResult Create([Bind(Include = "Id,Name,Photo,Brand,Model,Year")] Rv rv)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +125,7 @@ namespace XRvRentPlus.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name")] Rv rv)
+        public ActionResult Edit([Bind(Include = "Id,Name,Photo,Brand,Model,Year")] Rv rv)
         {
             if (ModelState.IsValid)
             {

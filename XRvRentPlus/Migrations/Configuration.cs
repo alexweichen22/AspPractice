@@ -1,6 +1,4 @@
-using XRvRentPlus.Models;
-
-namespace XRvRentPlus.Migrations
+﻿namespace XRvRentPlus.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -18,20 +16,8 @@ namespace XRvRentPlus.Migrations
         {
             //  This method will be called after migrating to the latest version.
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
-            context.Rvs.AddOrUpdate(
-                new Rv(){Name="Sunshine 2015A"},
-                new Rv(){Name="Snowman 2019A"}
-                );
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
+            //  to avoid creating duplicate seed data.
         }
     }
 }

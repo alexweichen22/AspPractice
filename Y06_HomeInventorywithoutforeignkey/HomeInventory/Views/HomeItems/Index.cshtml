@@ -1,0 +1,85 @@
+﻿@using HomeInventory.Helpers
+@model IEnumerable<HomeInventory.Models.HomeItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="row">
+    <div class="col-md-3">
+        @using (Html.BeginForm("Index", "HomeItems", FormMethod.Get, new { @class = "form-inline" }))
+        {
+            <div class="form-group">
+                <input class="form-control" placeholder="Description" name="searchString" type="text" value="@ViewBag.SearchString" />
+                <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        }
+    </div>
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SerialNumber)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.PurchaseInfo)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @if (item.Photo != null)
+                {
+                    @Html.GetThumbnail(item.Photo)
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+
+            <td>
+                @Html.Partial("_PurchaseInfo", item.PurchaseInfo)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.HomeItemId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.HomeItemId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.HomeItemId })
+            </td>
+        </tr>
+    }
+
+</table>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+}

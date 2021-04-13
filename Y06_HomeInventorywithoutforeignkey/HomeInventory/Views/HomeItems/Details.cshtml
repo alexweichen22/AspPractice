@@ -1,0 +1,25 @@
+﻿@using HomeInventory.Helpers
+@model HomeInventory.ViewModels.HomeItemViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Item</h4>
+    <hr />
+    <div class="text-center">
+        @Html.GetThumbnail(Model.PhotoDB, 400, 400)
+    </div>
+    <h2>Purchase Info</h2>
+    <div>
+        @Html.Partial("_PurchaseInfo", Model.PurchaseInfo)
+    </div>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.HomeItemId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,34 @@
+﻿@model XRvRentPlus.ViewModels.RandomRvViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Random RV</h2>
+<p>@Model.Rv.Name </p>
+<i>Picked for you randomly by system. &nbsp&nbspFeel free to choose your favorite Rv! </i>
+
+<h2>Random User</h2>
+<p>@Model.Customer.Name</p>
+
+<h2>Rvs List</h2>
+<ul>
+    @foreach (var rv in Model.Rvs)
+    {
+        <li>@rv.Name</li>
+    }
+</ul>
+
+<h2>Customers List</h2>
+<ul>
+    @foreach (var cust in Model.Customers)
+    {
+        <li>@cust.Name</li>
+    }
+</ul>
+
+
+
+
+
+
