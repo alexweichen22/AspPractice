@@ -1,0 +1,84 @@
+﻿@*@using MVCPagination.Helpers
+@using PagedList.Mvc*@ 
+@model PagedList.IPagedList<MVCPagination.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="row">
+    <div class="col-md-3">
+        @*@using (Html.BeginForm("Index", "Students", FormMethod.Get))*@
+        @using(Ajax.BeginForm("Index", "Students", new AjaxOptions()
+        {
+            HttpMethod = "GET",
+            InsertionMode  = InsertionMode.Replace,
+            UpdateTargetId = "grid"
+        }))
+        {
+            <div class="input-group-addon">
+                <input class="form-control" 
+                       placeholder="Student Name" name="searchString"
+                       type="text" value="@ViewBag.CurrentFilter" />
+                <div class="input-group-addon">
+                    <button class="btn btn-default" type="submit">Search</button>
+                </div>
+
+            </div>
+        }
+    </div>
+</div>
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Name", "Index", new { sortOrder = "name", sortDir = string.IsNullOrEmpty(ViewBag.sortDir) ? "asc" : (ViewBag.sortDir == "asc" ? "desc" : "asc"), searchString = ViewBag.CurrentFilter })
+            @Html.GetArrow((string)ViewBag.sortOrder, "name", (string)ViewBag.sortDir)
+
+        </th>
+        <th>
+            @Html.ActionLink("EnrollmentDate", "Index", new { sortOrder = "enrollmentDate", sortDir = string.IsNullOrEmpty(ViewBag.sortDir) ? "asc" : (ViewBag.sortDir == "asc" ? "desc" : "asc"), searchString = ViewBag.CurrentFilter })
+            @Html.GetArrow((string)ViewBag.sortOrder, "enrollmentDate", (string)ViewBag.sortDir)
+
+        </th>
+        <th>
+            Photo
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnrollmentDate)
+        </td>
+        <td>
+            @if (item.Photo != null)
+                {
+                    @Html.GetThumbnail(item.Photo)
+                }
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>*@
+
+@*@Html.PagedListPager(Model, Page => Url.Action("Index", new {Page, sortOrder = ViewBag.SortOrder,
+sortDir = ViewBag.SortDir, currentFilter = ViewBag.CurrentFi}))*@
+
+<div id="grid">
+    @Html.Partial("_SearchList", Model)
+</div>
