@@ -1,2 +1,0 @@
-C:\Users\wchen\_git\_asp.NET\AspPractice\Z03-MVC-Conversion\obj\Debug\Z03-MVC-Conversion.csprojAssemblyReference.cache
-C:\Users\wchen\_git\_asp.NET\AspPractice\Z03-MVC-Conversion\obj\Debug\Z03-MVC-Conversion.csproj.CoreCompileInputs.cache

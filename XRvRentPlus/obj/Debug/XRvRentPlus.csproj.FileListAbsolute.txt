@@ -101,9 +101,12 @@ C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\bin\Microsoft.Owin.Security
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.Migrations.initial.resources
+C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.Migrations.addPostComment.resources
+C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.csproj.GenerateResource.cache
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.csproj.CoreCompileInputs.cache
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.csproj.CopyComplete
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.pdb
-C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.Migrations.initial.resources
-C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.csproj.GenerateResource.cache
+C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.Migrations._2nd.resources
+C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.csprojAssemblyReference.cache

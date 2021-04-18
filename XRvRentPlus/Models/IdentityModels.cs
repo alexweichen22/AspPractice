@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using XRvRentPlus.Models;
 
 namespace XRvRentPlus.Models
 {
@@ -22,6 +23,8 @@ namespace XRvRentPlus.Models
     {
         public DbSet<Rv> Rvs { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Comment> Comments { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

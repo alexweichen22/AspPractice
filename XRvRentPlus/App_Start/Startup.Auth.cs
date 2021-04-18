@@ -54,9 +54,9 @@ namespace XRvRentPlus
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "3814326661938539",
+               appSecret: "0654d762bb877ca5eb4c51f3faeb1f6e");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

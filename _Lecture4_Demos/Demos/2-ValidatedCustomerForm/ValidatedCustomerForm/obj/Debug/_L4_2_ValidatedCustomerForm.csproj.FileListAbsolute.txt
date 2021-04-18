@@ -1,2 +1,0 @@
-C:\Users\wchen\_git\_asp.NET\AspPractice\_Lecture4_Demos\Demos\2-ValidatedCustomerForm\ValidatedCustomerForm\obj\Debug\ValidatedCustomerForm.dll
-C:\Users\wchen\_git\_asp.NET\AspPractice\_Lecture4_Demos\Demos\2-ValidatedCustomerForm\ValidatedCustomerForm\obj\Debug\ValidatedCustomerForm.pdb

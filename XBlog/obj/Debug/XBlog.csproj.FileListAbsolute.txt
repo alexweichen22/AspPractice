@@ -69,6 +69,7 @@ C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Microsoft.Owin.Security.Twitt
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Newtonsoft.Json.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Owin.dll
+C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.ComponentModel.Annotations.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.Helpers.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.Mvc.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.Optimization.dll
@@ -77,6 +78,8 @@ C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.WebPages.Deploymen
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.WebPages.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.WebPages.Razor.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\WebGrease.dll
+C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\EntityFramework.xml
+C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\EntityFramework.SqlServer.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.Helpers.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.Mvc.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.Optimization.xml
@@ -86,8 +89,6 @@ C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.WebPages.Deploymen
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.Web.WebPages.Razor.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Newtonsoft.Json.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Antlr3.Runtime.pdb
-C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\EntityFramework.xml
-C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\EntityFramework.SqlServer.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -102,10 +103,9 @@ C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Microsoft.Owin.Security.Micro
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\obj\Debug\XBlog.csprojAssemblyReference.cache
+C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\obj\Debug\XBlog.Migrations.initial.resources
+C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\obj\Debug\XBlog.csproj.GenerateResource.cache
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\obj\Debug\XBlog.csproj.CoreCompileInputs.cache
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\obj\Debug\XBlog.csproj.CopyComplete
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\obj\Debug\XBlog.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\obj\Debug\XBlog.pdb
-C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\bin\System.ComponentModel.Annotations.dll
-C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\obj\Debug\XBlog.Migrations.initial.resources
-C:\Users\wchen\_git\_asp.NET\AspPractice\XBlog\obj\Debug\XBlog.csproj.GenerateResource.cache

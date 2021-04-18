@@ -69,10 +69,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05G_WeatherApi", "Y05_Temp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y05C_MVCScaffolding", "Y05_TempConv_MVCScaff\MVCScaffolding\Y05C_MVCScaffolding.csproj", "{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XRvRent", "XRvRent\XRvRent.csproj", "{B76C4022-1795-4C06-8267-37B6FED0D78E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XRvRentPlus", "XRvRentPlus\XRvRentPlus.csproj", "{1B136EC6-7171-468D-AE36-08329BD133F8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y06_HomeInventory", "Y06_HomeInventorywithoutforeignkey\HomeInventory\Y06_HomeInventory.csproj", "{F0633C58-4443-4473-9402-5484558CD9A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y07_BasicAjax", "Y07_BasicAjax\Y07_BasicAjax.csproj", "{0BA0FE63-8357-4F33-AA6A-8364A1BC4EE0}"
@@ -84,6 +80,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceRegistration", "RaceRegistration\RaceRegistration.csproj", "{A54ADE86-49F2-4DB5-9E4B-48D07027B930}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y09_MVCPagination", "Y09_MVCPagination\Y09_MVCPagination.csproj", "{53571BDB-370F-49D0-806C-B754190447D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XRvRentPlus", "XRvRentPlus\XRvRentPlus.csproj", "{1B136EC6-7171-468D-AE36-08329BD133F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -290,18 +288,6 @@ Global
 		{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}.Testing|Any CPU.ActiveCfg = Release|Any CPU
 		{D56A7521-C44A-41B7-8BEB-8AC2BC62BB2F}.Testing|Any CPU.Build.0 = Release|Any CPU
-		{B76C4022-1795-4C06-8267-37B6FED0D78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B76C4022-1795-4C06-8267-37B6FED0D78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B76C4022-1795-4C06-8267-37B6FED0D78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B76C4022-1795-4C06-8267-37B6FED0D78E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B76C4022-1795-4C06-8267-37B6FED0D78E}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
-		{B76C4022-1795-4C06-8267-37B6FED0D78E}.Testing|Any CPU.Build.0 = Debug|Any CPU
-		{1B136EC6-7171-468D-AE36-08329BD133F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B136EC6-7171-468D-AE36-08329BD133F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B136EC6-7171-468D-AE36-08329BD133F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B136EC6-7171-468D-AE36-08329BD133F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B136EC6-7171-468D-AE36-08329BD133F8}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B136EC6-7171-468D-AE36-08329BD133F8}.Testing|Any CPU.Build.0 = Debug|Any CPU
 		{F0633C58-4443-4473-9402-5484558CD9A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F0633C58-4443-4473-9402-5484558CD9A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0633C58-4443-4473-9402-5484558CD9A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -338,6 +324,12 @@ Global
 		{53571BDB-370F-49D0-806C-B754190447D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{53571BDB-370F-49D0-806C-B754190447D0}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
 		{53571BDB-370F-49D0-806C-B754190447D0}.Testing|Any CPU.Build.0 = Debug|Any CPU
+		{1B136EC6-7171-468D-AE36-08329BD133F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B136EC6-7171-468D-AE36-08329BD133F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B136EC6-7171-468D-AE36-08329BD133F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B136EC6-7171-468D-AE36-08329BD133F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B136EC6-7171-468D-AE36-08329BD133F8}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B136EC6-7171-468D-AE36-08329BD133F8}.Testing|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
