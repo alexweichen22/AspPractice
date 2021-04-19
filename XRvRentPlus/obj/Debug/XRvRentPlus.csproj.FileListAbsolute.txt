@@ -110,3 +110,5 @@ C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.dll
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.pdb
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.Migrations._2nd.resources
 C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.csprojAssemblyReference.cache
+C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.Migrations.addRental.resources
+C:\Users\wchen\_git\_asp.NET\AspPractice\XRvRentPlus\obj\Debug\XRvRentPlus.Migrations.addDbSet.resources

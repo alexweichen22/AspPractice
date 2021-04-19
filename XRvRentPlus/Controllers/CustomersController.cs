@@ -16,6 +16,7 @@ namespace XRvRentPlus.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Customers
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.Customers.ToList());
@@ -39,6 +40,7 @@ namespace XRvRentPlus.Controllers
         }
 
         // GET: Customers/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();

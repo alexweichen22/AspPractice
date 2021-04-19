@@ -11,16 +11,40 @@ using XRvRentPlus.ViewModels;
 
 namespace XRvRentPlus.Controllers
 {
+
     public class RvsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Rvs
-        public ActionResult Index()
+        [AllowAnonymous]
+        public ActionResult Index(string searchString)
         {
-            return View(db.Rvs.ToList());
+            ViewBag.searchString = searchString;
+            //ViewBag.sortOrder = sortOrder;
+            //ViewBag.sortDir = sortDir;
+
+            var rvs = db.Rvs.AsQueryable();
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                rvs = rvs.Where(s => s.Brand.Contains(searchString));
+            }
+
+            //rvs = rvs.OrderBy(s => s.Year);
+            rvs = rvs.OrderByDescending(s => s.Year);
+
+            return View(rvs.ToList());
         }
 
+        /*
+            public ActionResult Index()
+            {
+                return View(db.Rvs.ToList());
+            }
+        */
+
+
+        [AllowAnonymous]
         public ActionResult Random()
         {
             // This is to generate a random record from database model to show it on
@@ -83,6 +107,7 @@ namespace XRvRentPlus.Controllers
         }
 
         // GET: Rvs/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();

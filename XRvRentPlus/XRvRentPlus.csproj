@@ -173,6 +173,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
+    <Compile Include="Controllers\RentalsController.cs" />
     <Compile Include="Controllers\RvsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -189,6 +190,14 @@
     <Compile Include="Migrations\202104180255543_2nd.Designer.cs">
       <DependentUpon>202104180255543_2nd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104181622286_addRental.cs" />
+    <Compile Include="Migrations\202104181622286_addRental.Designer.cs">
+      <DependentUpon>202104181622286_addRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104181626006_addDbSet.cs" />
+    <Compile Include="Migrations\202104181626006_addDbSet.Designer.cs">
+      <DependentUpon>202104181626006_addDbSet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Comment.cs" />
@@ -196,10 +205,11 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\Rv.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="ViewModels\Blog.cs" />
+    <Compile Include="ViewModels\PostViewModel.cs" />
     <Compile Include="ViewModels\RandomRvViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -280,6 +290,11 @@
     <Content Include="Views\Comments\Details.cshtml" />
     <Content Include="Views\Comments\Edit.cshtml" />
     <Content Include="Views\Comments\Index.cshtml" />
+    <Content Include="Views\Rentals\Create.cshtml" />
+    <Content Include="Views\Rentals\Delete.cshtml" />
+    <Content Include="Views\Rentals\Details.cshtml" />
+    <Content Include="Views\Rentals\Edit.cshtml" />
+    <Content Include="Views\Rentals\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -306,6 +321,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104180255543_2nd.resx">
       <DependentUpon>202104180255543_2nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104181622286_addRental.resx">
+      <DependentUpon>202104181622286_addRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104181626006_addDbSet.resx">
+      <DependentUpon>202104181626006_addDbSet.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

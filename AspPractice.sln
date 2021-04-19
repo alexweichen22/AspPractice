@@ -83,6 +83,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Y09_MVCPagination", "Y09_MV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XRvRentPlus", "XRvRentPlus\XRvRentPlus.csproj", "{1B136EC6-7171-468D-AE36-08329BD133F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidly1", "Vidly\Vidly1.csproj", "{295707EF-F8B0-4480-8538-B47844A263B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidly2", "vidly-mvc-5\Vidly\Vidly2.csproj", "{F84A97B1-0F73-4C9D-ABE5-8AF91F16C081}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -330,6 +334,18 @@ Global
 		{1B136EC6-7171-468D-AE36-08329BD133F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B136EC6-7171-468D-AE36-08329BD133F8}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
 		{1B136EC6-7171-468D-AE36-08329BD133F8}.Testing|Any CPU.Build.0 = Debug|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{F84A97B1-0F73-4C9D-ABE5-8AF91F16C081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84A97B1-0F73-4C9D-ABE5-8AF91F16C081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84A97B1-0F73-4C9D-ABE5-8AF91F16C081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84A97B1-0F73-4C9D-ABE5-8AF91F16C081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84A97B1-0F73-4C9D-ABE5-8AF91F16C081}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{F84A97B1-0F73-4C9D-ABE5-8AF91F16C081}.Testing|Any CPU.Build.0 = Testing|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
